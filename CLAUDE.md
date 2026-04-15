@@ -1,67 +1,68 @@
-# DesignForge.io Landing Page
+# DesignForge.io
 
-> **Goal:** High-converting landing page for AI-powered design system generator
+> AI-powered design system generator for developers.
 
-**Concept:** Describe your product → Get a complete design system (Tailwind config, shadcn components, CSS variables, landing page)
+## Concept
 
-**Architecture:** Next.js 14 with App Router, Tailwind CSS, shadcn/ui, Framer Motion for animations
-
-**Design Philosophy:** Premium, distinctive aesthetics using taste + impeccable skills. NO generic AI slop.
-
----
+DesignForge generates complete design systems from natural language descriptions. 
+Users describe their product → AI creates Tailwind config, shadcn components, CSS variables.
 
 ## Tech Stack
 
-- **Framework:** Next.js 14 (App Router)
-- **Styling:** Tailwind CSS + shadcn/ui
-- **Animations:** Framer Motion
-- **Icons:** Phosphor Icons
-- **Fonts:** Geist + Satoshi (from taste skill)
-- **Design:** taste + impeccable skills (no Inter, no purple gradients)
+- Next.js 14 (App Router)
+- Tailwind CSS v4
+- Phosphor Icons
+- Geist font
 
----
+## Design
+
+Uses taste + impeccable skills for premium aesthetics:
+- Dark theme (#0a0a0f) with coral accent (#ff6b35)
+- Glass morphism effects
+- Custom CSS animations (float, pulse-glow, fade-up)
+- No Inter, no purple gradients
+
+## Project Structure
+
+```
+src/app/
+├── page.tsx      # Landing page (all sections)
+├── layout.tsx   # Root layout with metadata
+└── globals.css   # Design system + animations
+
+components/       # To be added
+├── Hero.tsx
+├── Features.tsx
+├── Demo.tsx
+└── ...
+```
 
 ## Sections
 
-### 1. Hero
-- Bold headline: "Your design system, AI-generated in seconds"
-- Subheadline: "Describe your product. Get Tailwind config, shadcn components, CSS variables, and a live preview."
-- CTA: "Start Building Free" → opens signup
-- Visual: Animated preview of design system generation
+1. **Hero** - Animated code preview, CTA buttons
+2. **How It Works** - 3-step process cards
+3. **Features** - 6 feature cards with icons
+4. **Demo** - Interactive prompt → output
+5. **Testimonials** - 3 developer quotes
+6. **Pricing** - Free/Pro/Team tiers
+7. **FAQ** - Accordion with 5 questions
+8. **CTA** - Final conversion section
+9. **Footer** - Links + social
 
-### 2. How It Works (3 steps)
-1. **Describe** - "Tell us about your product, audience, and vibe"
-2. **Generate** - "AI creates your complete design system"
-3. **Export** - "Download and use in your project"
+## Next Steps
 
-### 3. Features Grid (6 features)
-- Tailwind Config Generator
-- shadcn/ui Components
-- CSS Variables & Themes
-- Dark/Light Mode
-- Responsive Design
-- Export Options (React, Vue, HTML)
+1. Add real AI generation (Connect to Claude API)
+2. Create API route for design generation
+3. Add user authentication
+4. Build dashboard for saved designs
+5. Add export functionality
+6. Add Stripe for payments
+7. Deploy to Vercel
 
-### 4. Live Demo
-- Interactive textarea: "Describe your product..."
-- Generate button
-- Preview panel showing generated code
-- Copy/Download buttons
+## Commands
 
-### 5. Testimonials
-- 3 quotes from fictional designers
-- Avatar + name + company
-
-### 6. Pricing
-- Free: 3 generations/month
-- Pro: $19/mo - unlimited
-- Team: $49/mo - 5 seats
-
-### 7. FAQ
-- 5-6 common questions
-
-### 8. CTA Section
-- Final push: "Start building your design system today"
-
-### 9. Footer
-- Links, social, copyright
+```bash
+npm run dev     # Development
+npm run build   # Production build
+npm run start   # Production server
+```
