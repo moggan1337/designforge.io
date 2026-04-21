@@ -3,10 +3,29 @@
 > AI-powered design system generator. Describe your product, get production-ready code.
 
 ![DesignForge](https://img.shields.io/badge/DesignForge-AI%20Design-brightgreen)
+![CI](https://github.com/moggan1337/designforge.io/actions/workflows/ci.yml/badge.svg)
 ![Next.js](https://img.shields.io/badge/Next.js-14-black)
 ![Tailwind](https://img.shields.io/badge/Tailwind-CSS-blue)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5-blue)
 ![License](https://img.shields.io/badge/License-MIT-green)
+
+## 🎬 Demo
+![DesignForge Demo](demo.gif)
+
+*AI generates production-ready components from descriptions*
+
+## Screenshots
+| Component | Preview |
+|-----------|---------|
+| Component Preview | ![preview](screenshots/component-preview.png) |
+| Design System | ![system](screenshots/design-system.png) |
+| Code Output | ![code](screenshots/code-output.png) |
+
+## Visual Description
+Component preview shows AI-generated UI rendered in a live browser. Design system displays token values for colors and typography. Code output shows TypeScript/React components with Tailwind classes.
+
+---
+
 
 ## Table of Contents
 
